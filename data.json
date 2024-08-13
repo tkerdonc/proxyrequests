@@ -1,0 +1,14 @@
+{
+	"models": [
+		{
+			"model": "maulerfirend",
+			"height": "10cm",
+			"width": "20cm",
+			"length": "30cm",
+			"base": "oval 100x1250"
+		},
+		{
+			"model": "forgefirend"
+		}
+	]
+}
