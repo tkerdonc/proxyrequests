@@ -2,3 +2,4 @@ main.aux
 main.log
 main.pdf
 texput.log
+src/__pycache__
