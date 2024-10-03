@@ -9,13 +9,13 @@ SKELETON_CONFIG = {
 	"base": "",
 	"painted": 1,
 	"notes": "",
-	"Original Model Scaling References": ""
+	"Official Model Size": ["", ""]
 }
 
 class pageConfig:
     def __init__(self, folder):
         self.name = folder.split(os.path.sep)[-1]
-    
+
     def dump(self):
         data = SKELETON_CONFIG
         data["model"] = self.name
