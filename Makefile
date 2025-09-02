@@ -7,4 +7,4 @@ all: staging/main.tex
 
 staging/main.tex:
 	mkdir -p staging
-	./main.py ${DATA}/* > staging/main.tex
+	./main.py ${DATA} > staging/main.tex

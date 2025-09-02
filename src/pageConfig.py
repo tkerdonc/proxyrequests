@@ -9,7 +9,8 @@ SKELETON_CONFIG = {
 	"base": "",
 	"painted": 1,
 	"notes": "",
-	"Official Model Size": ["", ""]
+	"Official Model Size": ["", ""],
+    "extra_images": []
 }
 
 class pageConfig:

@@ -94,7 +94,10 @@ class Page:
     def latex(self):
         retval = ""
         retval += HEADER_TEMPLATE.format(self)
-        retval += DUAL_IMAGES_TEMPLATE.format(self, self.first, self.second)
+        if os.path.exists(os.path.join(self.folder, self.second)):
+            retval += DUAL_IMAGES_TEMPLATE.format(self, self.first, self.second)
+        else:
+            retval += SINGLE_IMAGE_TEMPLATE.format(self, self.first)
         retval += TABLE_HEADER_TEMPLATE.format(self)
 
         for k in sorted(self.data.keys(), key=lambda x: self.getLineOrdinal(x)):
